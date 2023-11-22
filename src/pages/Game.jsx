@@ -9,7 +9,7 @@ import PopUp from "../components/PopUp";
 import ScoreBoard from "../components/ScoreBoard";
 import GameHeader from "../components/GameHeader";
 
-import { RoundNumber, SetGameScore, playSound } from "../functions";
+import { RoundNumber, SetGameScore } from "../functions";
 import { linesWhichAre } from "../functions";
 
 const defaultSquare = () => new Array(9).fill(null);
@@ -46,7 +46,7 @@ const Game = ({ symbol }) => {
     let newSquares = squares;
     player === "cross" ? (newSquares[index] = "X") : (newSquares[index] = "O");
     setSquares([...newSquares]);
-    playSound();
+    
     setComputersturn(true);
   };
 
@@ -152,7 +152,7 @@ const Game = ({ symbol }) => {
         );
         setTimeout(() => {
           putComputerAt(winIndex[0]);
-          playSound();
+          
           setComputersturn(false);
         }, 1000);
         return;
@@ -168,7 +168,7 @@ const Game = ({ symbol }) => {
         );
         setTimeout(() => {
           putComputerAt(blockIndex[0]);
-          playSound();
+          
           setComputersturn(false);
         }, 1000);
         return;
@@ -177,7 +177,7 @@ const Game = ({ symbol }) => {
       //random position for the computer to play it turn
       setTimeout(() => {
         putComputerAt(randomIndex);
-        playSound();
+        
         setComputersturn(false);
       }, 1000);
     }

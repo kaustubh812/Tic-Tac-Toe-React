@@ -1,4 +1,4 @@
-import swipe from "../assets/swipe.mp3";
+
 export const Lines = [
   [0, 1, 2],
   [3, 4, 5],
@@ -32,7 +32,3 @@ export const linesWhichAre = (a, b, c, squares) => {
   });
 };
 
-export const playSound = () => {
-  const beat = new Audio(swipe);
-  beat.play();
-};

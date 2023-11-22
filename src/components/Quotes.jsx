@@ -13,7 +13,7 @@ const Quotes = () => {
   useEffect(() => {
     const intervalCall = setInterval(() => {
       fetchQuotes();
-    }, 60000);
+    }, 10000);
     return () => {
       clearInterval(intervalCall);
     };

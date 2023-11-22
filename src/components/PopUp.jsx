@@ -1,3 +1,4 @@
+//Importing necessary things
 import React from "react";
 import circle from "../assets/circle.png";
 import cross from "../assets/cross.png";

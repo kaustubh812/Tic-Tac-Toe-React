@@ -1,3 +1,4 @@
+//Importing necessary things
 import React, { useEffect, useState } from "react";
 import logo from "../assets/quote.png";
 

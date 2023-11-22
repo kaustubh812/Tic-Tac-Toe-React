@@ -1,14 +1,12 @@
+//Importing necessary things
 import React, { useEffect, useState } from "react";
-
 import cross from "../assets/cross.png";
 import circle from "../assets/circle.png";
 import empty from "../assets/empty.png";
-
 import Quotes from "../components/Quotes";
 import PopUp from "../components/PopUp";
 import ScoreBoard from "../components/ScoreBoard";
 import GameHeader from "../components/GameHeader";
-
 import { RoundNumber, SetGameScore } from "../functions";
 import { linesWhichAre } from "../functions";
 

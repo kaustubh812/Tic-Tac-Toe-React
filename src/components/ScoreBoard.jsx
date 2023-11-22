@@ -1,3 +1,4 @@
+//Importing necessary thing
 import React from "react";
 
 const ScoreBoard = ({ player, userscore, pcscore, tie }) => {

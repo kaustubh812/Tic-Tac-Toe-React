@@ -1,7 +1,7 @@
+//Importing necessary things
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
-
 import Quotes from "../components/Quotes";
 import circle from "../assets/circle.png";
 import cross from "../assets/cross.png";
